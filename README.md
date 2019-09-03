@@ -1,2 +1,2 @@
 # mysat_website
-Need to start with the index.html and then decide the layout of the website.
+BAsic index.html is ready with menu bar options typed out.
