@@ -1,24 +1,52 @@
+
 *{
-	margin:0;
-	padding:0;
-	background-color: skyblue
+	font-size: 20px;
+}
+
+body{
+	background: url("../images/index_bg.jpg") no-repeat;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.8);
+
 }
 
 .title{
-
+	color: white;
+	font-family: "Space Mono";
 }
 
-ul{
-	float:right;
-
+h1{
+	font-size:60px;
+	margin-bottom: 2px;
 }
-.sidemenu{
-	padding:5px;
+
+h3{
+	font-size: 15px;
+	margin-top: 1px;
+}
+
+a{
+	font-family: "Space Mono";
+	display: block;
+	font-size: 45px;
+	color: white;
+	padding:10px;
 	margin:10px;
-	
-	display: inline-block;
+	text-decoration: none;
+	transition: font-size 0.3s;
+
+
 }
 
-.sidemenu li{
-	border:1px solid white;
+ul li{
+	list-style-type:none;
+	width:fit-content;
+
+}
+
+a:hover{
+	font-size: 50px;
+	transition: font-size 0.3s;
+	color:black;
+	background-color: white;
 }
