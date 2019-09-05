@@ -1,0 +1,24 @@
+*{
+	margin:0;
+	padding:0;
+	background-color: skyblue
+}
+
+.title{
+
+}
+
+ul{
+	float:right;
+
+}
+.sidemenu{
+	padding:5px;
+	margin:10px;
+	
+	display: inline-block;
+}
+
+.sidemenu li{
+	border:1px solid white;
+}
