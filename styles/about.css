@@ -1,0 +1,32 @@
+*{
+    margin:0px;
+    padding:0px;
+    color:#ffffff;
+    font-family: Space Times New Roman;
+}
+
+body{
+    background: url(../images/about_bg_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+h1{
+    margin:30px;
+    margin-bottom: 5px;
+    padding:5px;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+#about{
+    margin-top:5px;
+    padding:2px;
+}
+
+ul{
+    float:left;
+    width:fit-content;
+    
+}
