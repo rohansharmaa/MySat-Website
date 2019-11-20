@@ -6,11 +6,13 @@
 }
 
 body{
-    background: url(../images/about_bg_1.jpg);
-    background-size: cover;
+    background: url(../images/78873-galaxy-stars-space.jpg);
+    background-size:cover;
     background-repeat: no-repeat;
-    
+    background-attachment: fixed;    
 }
+
+
 
 h1{
     margin:30px;
@@ -21,19 +23,113 @@ h1{
     
 }
 
-#about{
+.nav-menu{
+    
+    width:fit-content;
+    margin-top:0px;
+    display: inline;
+
+    
+}
+
+.nav-menu-item{
+    display: inline-block;
+    padding:5px;
+    border: white 1px solid;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left:50px;
+}
+
+.nav-menu-item:hover{
+    background: rgba(256,256,256,0.6);
+}
+
+.about{
     margin-top:5px;
     padding:2px;
     margin-left: 50px;
 }
 
-#team_table{
-    width:60%;
-    float:left;
-}
 
 .person{
     display: inline-block;
-    width: fit-content;
-    margin:100px;
+    width: 10%;
+    margin-left:50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    
+}
+
+
+#back_button{
+    
+    width:fit-content;
+    margin-top:20px;
+    margin-left:10px;
+    padding:10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pos{
+    background: rgba(0,0,0,0.7);
+}
+
+#names{
+    display:none;
+    margin:10px;
+    padding-bottom: 2px;
+}
+
+
+#showlist, #hidelist{
+    width:fit-content;
+    border: white 1px solid;
+    padding:5px;
+    
+
+}
+
+#showlist:hover, #hidelist:hover{
+    background: rgba(256,256,256,0.6);
+    cursor: pointer;
+    
+}
+#social{
+    width:fit-content;
+    padding:0px;
+    float:right;
+    background: rgba(256,256,256,0.3);
+    position: fixed;
+    top:50%;
+    right:0%;
+}
+
+#sociallist{
+    padding:0px;
+    margin:0px;
+}
+
+.icons{
+    display:block;
+}
+
+
+.icons:hover{
+    cursor:pointer;
+}
+
+#fb:hover{
+    background: blue;
+}
+
+#ig:hover{
+    background: purple;
+}
+
+#twitter:hover{
+    background: #54adf7;
 }

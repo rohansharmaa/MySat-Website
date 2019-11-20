@@ -25,6 +25,11 @@ h3{
 	margin-top: 1px;
 }
 
+.sidemenu{
+    top=50%;
+    position: fixed;
+}
+
 a{
 	font-family: "Space Mono";
 	display: block;
@@ -49,4 +54,28 @@ a:hover{
 	transition: font-size 0.3s;
 	color:black;
 	background-color: white;
+}
+
+#social{
+    width:fit-content;
+    padding:0px;
+    float:right;
+    background: rgba(256,256,256,0.3);
+    position: fixed;
+    top:50%;
+    left:98%;
+}
+
+#sociallist{
+    padding:0px;
+    margin:0px;
+} 
+
+.icons{
+    display:block;
+}
+
+.icons:hover{
+    background: white;
+    cursor:pointer;
 }

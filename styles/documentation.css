@@ -1,0 +1,42 @@
+*{
+    font-family: "Space Mono";
+}
+
+body{
+    background: url('../images/78873-galaxy-stars-space.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    color:white;
+}
+
+li{
+    color:white;
+}
+
+a{
+    text-decoration: underline;
+    color:wheat;
+    font-size: 0.8em;
+}
+
+#form{
+    width:fit-content;
+    float:right;
+    padding:20px;
+    border:2px solid white;
+}
+
+table{
+    color:white;
+}
+
+p{
+    color:white;
+}
+
+td,th{
+    padding:5px;
+}
