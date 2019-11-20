@@ -4,36 +4,107 @@
 	<title>About</title>
 	<link href="styles/about.css" rel="stylesheet">
 	<meta char="UTF-18">
+    <script src="scripts/about.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 <body>
 	
     <div id="team_table">
+        <br>
+        <center>
+        <ul class="nav-menu" style="list-style-type: none">
+			<li class="nav-menu-item"><a href="mysat.html">MySat</a></li>
+			<li class="nav-menu-item"><a href="info.html">Info</a></li>
+			<li class="nav-menu-item"><a href="live.html">Tracking</a></li>
+			<li class="nav-menu-item"><a href="about.html">About</a></li>
+            
+		</ul>
+            </center><br>
         <center><h1>About</h1></center>
+        
         <br>
 	   <!--<h2>Team Members</h2>-->
-        <p id='about'>MySat is a satellite built entirely by students under the guidance of experienced teachers and research scholars. A list of people involved is given below -</p>
-	   <ol>
+        <p class='about'>MySat is built entirely by students under the guidance of experienced teachers and research scholars. It took nearly two and a half years to go from planning to execution to launch. It's main goal is to collect and transmit atmospheric data, enabling a deeper study into weather patterns of the region and to predict future climatic condtions based on current temperature, cloud density, humidity, etc. <br><br>
+        <p class='about'>People from all over the world, from different backgrounds, have come together as a team to make this possible.   </p>
+            <p class='about'>A list of people involved is given below -</p>
+	   <ul style="list-style-type: none">
            <div class="person">
-		      <li>Rohan Sharma.
-                  <p class="bio">Insert biography here.</p>
+		      <li><img src="./images/head1.jpg" width="100%" heigth="90px">
+               <center class="pos">Abraham Cook<br>Director</center>
                </li>
            </div>
             <div class="person">
-                <li>Vishal Angadi
-                    <p calss="bio">Insert Bio here</p>
+                <li><img src="./images/head2.jpg" width="100%">
+                <center class="pos">Dr. Peter Lewi<br>Lead Scientist</center>
                 </li>
            </div>
         <div class="person">
-		  <li>Bharath Katragadda 
-              <p class='bio'> Insert Bio here</p></li>
+		  <li><img src="images/head3.jpg" width="100%"> 
+            <center class="pos">Sarah Hayley <br> Lead Engineer</center>
+            </li>
         </div>
         <div class="person">
-		  <li>Name number 4
-              <p class='bio'> Insert Bio here</p></li>
+		  <li><img src="images/head4.jpg" width="100%">
+            <center class="pos">Marques Zane<br>Lead Designer</center>
+            </li>
         </div>
-           
-        </ol>
+           <div class="person">
+            <li><img src="images/head5.jpg" width="100%">
+               <center class="pos">Tim Lee <br>Logistics Head</center></li>
+           </div>
+        </ul><br><br>
+        <center>
+        <br><br>
+        <ul id="names" style="list-style-type:none">
+            <li>Wilda Hynek</li>  
+            <li>Collene Kepler</li>  
+            <li>Merissa Ohagan</li>  
+            <li>Carlyn Radebaugh</li>  
+            <li>Luciano Demille</li>  
+            <li>Amparo Loftin </li>
+            <li>Aileen Correira</li>
+            <li>Margret Marino</li>  
+            <li>Horacio Rossetti</li>  
+            <li>Gricelda Ansari</li>  
+            <li>Oleta Elser</li>  
+            <li>Sanora Edds</li>
+            <li>Sherlene Serpa</li>
+            <li>Laurence Sondag</li>
+            <li>Iola Moody</li>
+            <li>Shanna Cristobal</li>
+            <li>Krista Saia</li>
+            <li>Gussie Steck</li>
+            <li>Delana Zale</li>
+            <li>Pablo Lovick</li>
+            <li>Zane Brantner</li>
+            <li>Corene Pease</li>
+            <li>Kathline Muscarella</li>
+            <li>Ruthanne Hagar</li>
+            <li>Lean Hove</li>
+            <li>Marco Perrone</li>
+            <li>Brittany Swafford</li>
+            <li>Kendrick Troung</li>
+            <li>Cleora Bocanegra</li>
+            <li>Kaushik S</li>
+            <li>Pingu Pranav</li>
+            <li>Oju</li>
+            <li>Genevive Tsai</li><br>
+            <li><a id="hidelist" onclick="hideList()">Click for lesser.</a></li>
+        </ul>
+        <a id="showlist" onclick="displayList()"> <b>Click to view the entire list</b></a>   
+        </center>
     </div>
-    
+    <center>
+        <div id="back_button">
+        <a href="index.html"><p>back</p></a>
+        </div>
+    </center>
+     <div id="social">
+            <ul id="sociallist" style="list-style-type: none">
+                <li id="fb"><ion-icon name="logo-facebook" size="large"></ion-icon></li>
+                <li id="ig"><ion-icon name="logo-instagram" size="large"></ion-icon></li>
+                <li id="twitter"><ion-icon name="logo-twitter" size="large"></ion-icon></li>
+            </ul>
+        </div>
 </body>
 </html>

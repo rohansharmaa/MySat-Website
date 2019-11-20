@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>ON-Board Computers</title>
+       <style>
+       body{
+        background: url(images/78873-galaxy-stars-space.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+           padding:20px;
+    }
+    
+    p{
+        font-family: "Space Mono";
+        color: white;
+    }
+    h3{
+         color: white;
+         }
+          h1{
+              color:white;
+          }
+      </style>
+
+  </head>
+  <body>
+    
+      <center><h1>OBC</h1></center>
+      <p>Allsubsystems on board MySat are controlled by an On-board Computer (OBC). OBC processes telecommands received from Earth, monitors the current state of the satellite, automatically performs scheduled tasks and collects telemetry data from all subsystems and cameras. It is based on the CubeComputer V3 platform from CubeSpace , which is based on the EFM32 microcontroller (ARM Cortex-M3). The data is stored in an external Flash memory which is on the Payload plate (PLD).</p>
+      <center><img src="obc2.jpg" alt="OBC" width="40%" height="40%"></center>
+      <div style="float:left;width:50%;display:inline-block;">
+      <h3>Construction of on-board computer</h3>
+      <p>OBC is equipped with parallel Flash, StaticRAM and EEPROM memory. The Flash memory stores software images whose integrity is checked by the bootloader, which then loads the functional image into the internal Flash memory of the EFM32 microcontroller. If it is not possible to load a valid image of the software, the on-board computer will load the special operating mode from the EEPROM memory and will try to repair the software.</p>
+      <p>The StaticRAM memory, on the other hand, stores the current OBC results. It is secured by hardware redundancy, Hamming code (EDAC) implemented by FPGA and scrubbing implemented by OBC software.</p>
+    </div>
+    <div style="float:right;width:50%;display:inline-block;">
+      <h3>Tests</h3>
+      <p>The on-board computer software is complex and has many dependencies. It is based on the FreeRTOS real-time system . The right test stack and test environment enabled convenient testing of the software at all times.Unit tests were created using GoogleTest and GoogleMock libraries (with minor modifications). In addition, some tests were created using the RapidCheck library supporting the property-based testing technique. Regular code review and continuous integration helped maintain high quality code throughout the entire software development period. A set of end-to-end tests (Python) allowed to confirm the readiness of the software and eliminate hard to detect errors.</p>
+      <p>Experiment data and historical status (up to ~ 36 hours) of the satellite are stored in PLD memories (external memories are connected to the Piggyback connector). There are three Flash memories with a size of 16MB each.</p>
+    </div>
+  </body>
+</html>

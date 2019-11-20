@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Payload Deployments</title>
+      <style>
+       body{
+        background: url(images/78873-galaxy-stars-space.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+           padding:20px;
+    }
+    
+    p{
+        font-family: "Space Mono";
+        color: white;
+    }
+    h3{
+         color: white;
+         }
+          h1{
+              color:white;
+          }
+      </style>
+  </head>
+  <body>
+      <center><h1>Payload</h1></center>
+    
+    <p>The Payload board (PLD) is a module to which all experiments are connected. This board also has Flash and FerroelectricRAM (FRAM) memories, real-time clock (RTC) and a solar panel release mechanism.</p>
+      <center><img src="pay2.jpg" alt="Payload"></center>
+      <div style="float:left;width:50%;display:inline-block;">
+        <h3>Solar panel release mechanism</h3>
+        <p>During the start, the PW-Sat2 panels are folded. A special mechanism, designed by our team of mechanics, keeps them in place. The panels are held by a cable that will burn through at the right time.</p>
+        <h3>Flash and FRAM memories</h3>
+        <p>There are three Flash memory chips and three FRAM memory chips on PLD. In the flash memory, the on-board computer saves experiment data, camera images and historical telemetry. The FRAM memory stores the current settings and basic information about the operation of the satellite (for example, the current duration of the mission, recorded every 15 minutes).</p>
+    </div>
+    <div style="float:right;width:50%;display:inline-block;">
+      <h3>Cameras</h3>
+      <p>The cameras communicate with the on-board computer via a serial UART interface. The on-board computer has only one such interface. The PLD has a multiplexer that switches the computer between two cameras.</p>
+      <h3>Photodiodes and sun sensors</h3>
+      <p>All four solar panels have photodiodes and PT1000 resistive temperature sensors. The same temperature sensors can also be found on cameras. Reading from photodiodes allows for determining the coarse orientation of the satellite relative to the Sun. In case of failure of other sensors, i.e. magnetometers and gyroscopes, it is the photodiodes that can be used as a substitute. Electronics supporting these sensors are located on PLD.</p>
+    </div>
+  </body>
+</html>

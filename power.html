@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Power Mechanisms</title>
+       <style>
+       body{
+        background: url(images/78873-galaxy-stars-space.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+           padding:20px;
+    }
+    
+    p{
+        font-family: "Space Mono";
+        color: white;
+    }
+    h3{
+         color: white;
+         }
+          h1{
+              color:white;
+          }
+      </style>
+  </head>
+  <body>
+      <center><h1>Power System</h1></center>
+    
+    <p>ThePower Supply System (EPS) is responsible for converting energy from solar panels, charging batteries and distributing power to subsystems. It was designed and made by the PW-Sat2 team.</p>
+      <center><img src="power2.jpg" alt="Power"></center>
+      <div style="float:left;width:50%;display:inline-block;">
+        <h3>Work on EPS</h3>
+        <p>Work on the ENP began in mid-2013. From then on, three people worked on it, of which one person was responsible for the hardware design, and the other two for software and HAL (HAL - hardware abstraction layer) . The final version of the hardware was created in mid-2017, and the final version of the software at the end of 2017.</p>
+        <h3>DM Model</h3>
+        <p>The most important part of EPS is the MPPT module. The DM model (DM - demonstration model) of the MPPT module was created at the end of 2013 to verify the assumptions of the module's functionality. This model confirmed that the assumed way of controlling the DCDC converter is good but also showed that designing this type of systems requires more knowledge related to EMC (EMC - electromagnetic compatibility). The description of the DM model and the results of the experiments can be found in the phase A documentation .</p>
+    </div>
+    <div style="float:right;width:50%;display:inline-block;">
+      <p>In addition to functional tests, the EM2 model also underwent tests in a thermal-vacuum chamber in the full range of operating temperatures.</p>
+      <h3>PFM model</h3>
+      <p>The PFM EPS model was created in mid-2017. Compared to the EM2 model, small functional changes were introduced and some minor errors were corrected. Finally, during the PFM tests, additional corrections were introduced in MPPT modules and in distribution.</p>
+      <p>EPS was created on an eight-layer FR4 board, with 948 elements on its surface. The final weight of the plate was about 110g.In October 2017, the EPS module was ready for final testing to confirm readiness to fly. Description of EM2 and PFM models and test results can be found in phase D documentation.</p>
+    </div>
+  </body>
+</html>
