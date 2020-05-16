@@ -1,5 +1,2 @@
-# mysat_website
-index.html is done.
-About page has a skeletal structure.
-Required fonts are present in the zip fie. Images for background use are in images folder.
-Put all stylesheets in the styles folder.
+MySat is assumed to a small student made satellite which is in space.
+With this assumption, a website is built for tracking, mission reporting and for getting information related to it.
